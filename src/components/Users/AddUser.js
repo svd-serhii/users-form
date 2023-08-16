@@ -3,7 +3,7 @@ import styles from "./AddUser.module.css";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal/ErrorModal";
-import Wrapper from "../helpers/Wrapper/Wrapper";
+import Wrapper from "../Helpers/Wrapper/Wrapper";
 
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
