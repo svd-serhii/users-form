@@ -7,9 +7,11 @@ import ErrorModal from "../UI/ErrorModal/ErrorModal";
 import Wrapper from "../Helpers/Wrapper/Wrapper";
 
 const AddUser = (props) => {
+  //uncontrolled approach
   // const nameInputRef = useRef();
   // const ageInputRef = useRef();
 
+  //controlled approach for input
   const [enteredUsername, setEnteredUsername] = useState("");
   const [enteredUserAge, setEnteredUserAge] = useState("");
   const [error, setError] = useState();
@@ -45,6 +47,7 @@ const AddUser = (props) => {
     setEnteredUsername("");
     setEnteredUserAge("");
 
+    // props.AddUser(enteredName, enteredAge);
     // nameInputRef.current.value = '';
     // ageInputRef.current.value = '';
   };
